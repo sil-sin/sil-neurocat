@@ -1,6 +1,5 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
 init("user_CtWs1YzgidOw4pPwk0MKF");
@@ -130,7 +129,7 @@ function Aidkit(props) {
                         </DialogActions>
                     </form>
                 </Dialog>
-                <h4 id='faq'></h4>
+                <h4 id='faq'>FAQ</h4>
                 <img src='../faq.png' alt='faq'></img>
             </section>
             {error && <div id='error'>Please fill all the required* fields!</div>}
