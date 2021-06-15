@@ -4,8 +4,13 @@ function Products(props) {
 
     return (
         <div id='products'>
+            <nav className='sideNav come-in'>
+                <a href='#offerings'>Offerings</a><br /><br /><br />
+                <a href='#serviceProjects'>Service projects</a><br /><br />
+                <a href='#nonproflist'>Non-profit projects</a>
+            </nav>
             <h4>Overview on neurocat labs</h4>
-            <div className='allProducts'>
+            <div className='allProducts' id='offerings'>
                 <div className='productCard'>
                     <img src='https://www.neurocat.ai/wp-content/uploads/2018/11/Research.png' alt='research' />
                     <h4>Research</h4>
@@ -38,9 +43,9 @@ function Products(props) {
                 </div>
             </div>
             {/*Infographic on labs provide*/}
-            <img src='' alt='provides' className='infographProd' />
+            <img src='' alt='provides' className='infographProd' id='provides' />
             {/*neurocat labs past industry projects/service project*/}
-            <img src='' alt='projects' className='infographProd' />
+            <img src='' alt='projects' className='infographProd' id='serviceProjects' />
             {/*non profits*/}
             <ul className='infographProd' id='nonproflist'>
                 <li>Open Source Analysis, Optimization and Debugging Framework #aidkit.ai</li>

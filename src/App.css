@@ -214,7 +214,7 @@ ul {
 .section1 img {
   max-height: 200px;
 }
-.aidkitNav {
+.sideNav {
   position: fixed;
   right: 0;
   top: 30%;
@@ -226,7 +226,7 @@ ul {
   width: 100px;
   border-radius: 20px 0 0 20px;
 }
-.aidkitNav a {
+.sideNav a {
   color: #0f333d;
   font-weight: bold;
   border-bottom: solid #82d7ee;
@@ -240,4 +240,16 @@ ul {
 #deeptrust img {
   border: solid #33aaca;
   padding: 100px;
+}
+.resources {
+  align-self: flex-start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.resourceBox img {
+  padding: 30px 100px;
+  border: solid;
+  margin: 20px;
 }

@@ -63,7 +63,7 @@ function Aidkit(props) {
     };
     return (
         <div>
-            <nav className='aidkitNav'>
+            <nav className='sideNav come-in'>
                 <a style={{ textDecoration: 'underline' }} href='#whatis'>What is aidkit?</a><br />
                 <a href='#section1'>Approach</a><br />
                 <a href='#pricing'>Pricing</a><br />

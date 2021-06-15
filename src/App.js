@@ -10,6 +10,7 @@ import WithDin from './components/WithDin';
 import 'aos';
 import Aos from 'aos';
 import DeepTrust from './components/DeepTrust';
+import Resources from './components/Resources';
 
 function App(props) {
 
@@ -46,6 +47,7 @@ function App(props) {
         }} />
         <Route exact path='/work-DIN'> <WithDin /> </Route>
         <Route exact path='/deeptrust'><DeepTrust /></Route>
+        <Route exact path='/resources'> <Resources /> </Route>
       </Switch>
       <Footer open={open} handleClickOpen={handleClickOpen} upError={upError} error={error} handleClose={handleClose} />
     </div >
