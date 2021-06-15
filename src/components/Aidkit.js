@@ -65,13 +65,13 @@ function Aidkit(props) {
     return (
         <div>
             <nav className='aidkitNav'>
-                <Link style={{ textDecoration: 'underline' }} href='#'>What is aidkit?</Link><br />
-                <Link href='#'>Approach</Link><br />
-                <Link href='#'>Pricing</Link><br />
-                <Link href='#'>Login</Link><br />
-                <Link href='#'>FAQ's</Link><br />
+                <a style={{ textDecoration: 'underline' }} href='#whatis'>What is aidkit?</a><br />
+                <a href='#section1'>Approach</a><br />
+                <a href='#pricing'>Pricing</a><br />
+                <a href='#?'>Login</a><br />
+                <a href='#faq'>FAQ's</a><br />
             </nav>
-            <header>
+            <header id='whatis'>
                 <div>
                     <img src='https://www.neurocat.ai/wp-content/uploads/2018/11/addkit-hori.png'
                         alt='aidikitimg' />
@@ -109,11 +109,11 @@ function Aidkit(props) {
                 <img id='howAidkitWorks' src='' alt='' data-aos="fade-bottom" />
                 <h4>Current Customers</h4>
                 <img id='aidkitCustomers' src='' alt='' data-aos="fade-bottom" />
-                <h4>Pricing</h4>
-                <Button className='myBtn' variant="outlined" color="primary" onClick={handleClickOpen}>
+                <h4 id='pricing'>Pricing</h4>
+                <Button className='myBtn' variant="outlined" color="primary" onClick={handleClickOpen} >
                     Contact
                 </Button>
-                <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+                <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" >
                     <form onSubmit={handleSubmit} >
                         <DialogTitle id="form-dialog-title">Get in touch</DialogTitle>
                         <DialogContent>
@@ -124,14 +124,13 @@ function Aidkit(props) {
 
                         </DialogContent>
                         <DialogActions>
-
                             <Button onClick={handleClose} type='submit' color="primary">
                                 Send
                             </Button>
                         </DialogActions>
                     </form>
                 </Dialog>
-                <h4></h4>
+                <h4 id='faq'></h4>
                 <img src='../faq.png' alt='faq'></img>
             </section>
             {error && <div id='error'>Please fill all the required* fields!</div>}

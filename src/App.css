@@ -218,6 +218,7 @@ ul {
   position: fixed;
   right: 0;
   top: 30%;
+  z-index: 999;
   background-color: #33a9caaf;
   border: solid #39bbdf83;
   line-height: 30px;
