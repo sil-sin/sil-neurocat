@@ -2,7 +2,7 @@ import React from 'react'
 
 function DeepTrust() {
     return (
-        <div>
+        <div id='deeptrust'>
             <h2> Why DeepTrust?</h2>
             <div><img src='' alt='' /> Seal of Approval</div>
             <div><img src='' alt='' /> Best Protection</div>

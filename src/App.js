@@ -9,6 +9,7 @@ import Products from './components/Products';
 import WithDin from './components/WithDin';
 import 'aos';
 import Aos from 'aos';
+import DeepTrust from './components/DeepTrust';
 
 function App(props) {
 
@@ -44,6 +45,7 @@ function App(props) {
           return <Products  {...routeProps} />
         }} />
         <Route exact path='/work-DIN'> <WithDin /> </Route>
+        <Route exact path='/deeptrust'><DeepTrust /></Route>
       </Switch>
       <Footer open={open} handleClickOpen={handleClickOpen} upError={upError} error={error} handleClose={handleClose} />
     </div >

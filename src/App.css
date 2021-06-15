@@ -232,3 +232,12 @@ ul {
   border-bottom: solid #82d7ee;
   margin: 10px 0;
 }
+#deeptrust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#deeptrust img {
+  border: solid #33aaca;
+  padding: 100px;
+}

@@ -57,8 +57,8 @@ function Homepage(props) {
 
                 </div>
                 <div className='servicesBox'>
-                    <img src='https://www.neurocat.ai/wp-content/uploads/2018/11/deeptrust_siegel.png' alt='deeptrust' style={{ width: '80px' }} />
-                    <h4>AI Seal Of Aproval</h4>
+                    <Link to='/deeptrust'> <img src='https://www.neurocat.ai/wp-content/uploads/2018/11/deeptrust_siegel.png' alt='deeptrust' style={{ width: '80px' }} />
+                        <h4>AI Seal Of Aproval</h4></Link>
                     <p>Is an AI risk, safety, security and privacy framework for all stakeholders.
                         The acceptance of AI hinges on trust into the system. Thus, our quality seal and its related
                         frameworks serve to create trust in your AI solutions. Calculate and cover your risks,
