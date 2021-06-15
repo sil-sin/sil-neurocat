@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.header {
+  padding: 10px 80px;
+  margin: 0 80px;
+  width: 90%;
+}
+
+.navigation {
+  width: 100%;
+  align-self: stretch;
+  border-bottom: solid rgb(195, 217, 218);
+  padding-left: -25px;
+}
+.navigation img,
+.navigation a {
+  height: 50px;
+  padding: 5px;
+}
+.statementSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1em;
+  max-width: 1300px;
+  width: 100%;
+}
+.statementBox {
+  display: flex;
+  flex-grow: inherit;
+  align-items: center;
+  height: 230px;
+  margin: 10px;
+  max-width: 500px;
+  width: 100%;
+  overflow: auto;
+  background-color: #33aaca;
+  color: antiquewhite;
+  font-size: small;
+  border-radius: 15px;
+  box-shadow: rgb(113, 118, 121) 5px 5px 5px;
+}
+.statementBox img {
+  height: 230px;
+  width: 100px;
+}
+.statementBox p {
+  padding: 10px 20px;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.myBtn {
+  padding: 20px 40px !important;
+}
+.myBtn:hover {
+  color: aliceblue;
+  background-color: #33aaca !important;
+}
+#products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.allProducts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+}
+.productCard {
+  padding: 0 30px;
+  margin: 10px;
+  max-width: 300px;
+  width: 100%;
+}
+.infographProd {
+  max-width: 1000px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  border: solid;
+  margin: 20px;
+  padding: 30px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1400px;
+}
+.servicesBox {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+#infographAi {
+  max-height: 100px;
+  width: 100%;
+  height: 300px;
+  border: solid;
+  margin: 20px;
+}
+.pastProjects {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 200px;
+  height: 100%;
+  padding: 30px;
+  margin: 20px;
+}
+
+.withDin {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 200px;
+  height: 100%;
+  padding: 30px;
+  margin: 20px;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  margin-bottom: 20px;
+  max-width: 1300px;
+  width: 100%;
+}
+.team p {
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+}
+.team img {
+  max-width: 800px;
+  width: 100%;
+  margin: 10px;
+  height: 100%;
+}
+#team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 30px;
+  width: 100%;
+}
+.come-in {
+  transform: translateX(250px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.8s;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+#error {
+  color: aliceblue;
+  position: fixed;
+  bottom: 10px;
+  left: 40%;
+  background-color: rgba(219, 32, 32, 0.466);
+  font-size: larger;
+  border: solid rgba(39, 2, 2, 0.61);
+  padding: 5px;
+  border-radius: 5px;
+}
+.contactDetails {
+  display: flex;
+  justify-content: left;
+  background-color: blueviolet;
+}
+#section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 200px;
+  margin: 30px 0;
+  box-shadow: #33aaca 2px 2px 20px 2px;
+  border-radius: 10px;
+}
+.section1 img {
+  max-height: 200px;
+}
+.aidkitNav {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  background-color: #33a9caaf;
+  border: solid #39bbdf83;
+  line-height: 30px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px 0 0 20px;
+}
+.aidkitNav a {
+  color: #0f333d;
+  font-weight: bold;
+  border-bottom: solid #82d7ee;
+  margin: 10px 0;
+}
