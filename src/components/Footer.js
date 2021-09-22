@@ -3,7 +3,7 @@ import { Email, Facebook, Instagram, Phone, PinDrop, Twitter } from '@material-u
 import React, { useState } from 'react'
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
-init("user_CtWs1YzgidOw4pPwk0MKF");
+init(process.env.REACT_APP_USER);
 
 export default function Footer(props) {
 
@@ -44,7 +44,8 @@ export default function Footer(props) {
                 'service_6xkxi2b',
                 'template_q60uvek',
                 toSend,
-                'user_CtWs1YzgidOw4pPwk0MKF'
+                process.env.REACT_APP_USER
+
             )
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);

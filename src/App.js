@@ -19,7 +19,6 @@ function App(props) {
 
   Aos.init({
     duration: 1200,
-
   });
 
   const handleClickOpen = () => {
