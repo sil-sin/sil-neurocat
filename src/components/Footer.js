@@ -38,7 +38,7 @@ export default function Footer(props) {
             })
 
         } else {
-            console.log('senidng')
+            console.log('sending...')
             send(
 
                 'service_6xkxi2b',

@@ -2,7 +2,7 @@ import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } 
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
-init("user_CtWs1YzgidOw4pPwk0MKF");
+init(process.env.REACT_APP_USER);
 
 function Aidkit(props) {
     const [open, upOpen] = useState(false)
@@ -32,13 +32,13 @@ function Aidkit(props) {
             })
 
         } else {
-            console.log('senidng')
+            console.log('sending')
             send(
 
                 'service_6xkxi2b',
                 'template_387iwvd',
                 toSend,
-                'user_CtWs1YzgidOw4pPwk0MKF'
+                process.env.REACT_APP_USER
             )
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
