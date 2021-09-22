@@ -3,7 +3,7 @@ import { Email, Facebook, Instagram, Phone, PinDrop, Twitter } from '@material-u
 import React, { useState } from 'react'
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
-init(process.env.REACT_APP_USER);
+init(process.env.local.REACT_APP_USER);
 
 export default function Footer(props) {
 
